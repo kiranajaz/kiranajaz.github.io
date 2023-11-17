@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform:capitalize;
+  transition: all 0.3 linear;
+  
+
+}
+
+body{
+    background: linear-gradient( rgb(12, 15, 100), rgb(223, 3, 252));
+    height: 100vh;
+}
+
+.logo{
+  margin-top: 40px;
+  text-align: center;
+  color: #f75b00;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+
+/* ICONS*/
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*nav bar*/
+a,button{
+  cursor: pointer;
+  color: #f0e109;
+}
+
+nav{
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+}
+
+.navigation{
+  position: fixed;
+  right: -500px;
+  width: 200px;
+  height: 60%;
+  background: linear-gradient(rgb(223, 3, 252), rgb(12, 15, 100));
+  transition: .5s;
+  border-radius: 20px;
+}
+
+.navigation ul li{
+  text-align: right;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 20px 30px;
+}
+
+.hamburger, .bar{
+  position: fixed;
+}
+
+.hamburger{
+  display: block;
+  top: 5%;
+  left: 95%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  border: 0;
+  background: 0 0;
+}
+
+.bar{
+  top: 3px;
+  background: #026cf7;
+  width: 100%;
+  height: 5px;
+  
+  transition: all .3s ease-in;
+}
+
+#bar2{
+  top: 11px;
+}
+
+#bar3{
+  top: 19px;
+}
+
+.navigation.active{
+  right: 0;
+}
+
+.hamburger.open #bar1{
+  background-color: #005fee;
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+  background-color: transparent;
+}
+
+.hamburger.open #bar3{
+  background-color: #cad80a;
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/*sign-up */
+.main{
+  width: 350px;
+  height: 400px;
+  margin: 5% auto;
+  text-align: center;
+  background: #cad80a;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 40px #08b2dd;
+}
+
+#chk{
+  display: none;
+}
+
+.signup{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label{
+  color: #7c00f0;
+  font-size: 35px;
+  justify-content: center;
+  display: flex;
+  margin: 70px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  margin-bottom: 30px;
+}
+
+input{
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 18px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+button{
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #f10798;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: .3s ease-in;
+  cursor: pointer;
+  box-shadow: #e7c586;
+}
+button:hover{
+  background: #0428f1;
+}
+
+.login{
+  height: 450px;
+  background: #f06bbd;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: .8s ease-in-out;
+}
+
+.login{
+  height: 550px;
+  background:#78b7db;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: .8s ease-in-out;
+}
+
+.login label{
+  color: #b3f00a;
+  transform: scale(.6);
+}
+
+.login p{
+  text-align: center;
+  padding: 10px;
+}
+
+#chk:checked ~ .login{
+  transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label{
+  transform: scale(1); 
+}
+
+#chk:checked ~ .signup label{
+  transform: scale(.6);
+}
+
+
+
+
+/* 5& 6*/
+.modal {
+  background-color: #5bbdff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(233, 9, 233, 0.932);
+  width: 350px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: center;
+  transform: translate(-0%, 10%);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+.feedback {
+  margin-top: 50px;
+}

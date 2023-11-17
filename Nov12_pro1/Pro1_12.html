@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro1.css">
+    <link href="https//font.googleapis.com/css2?family=poppins&display=swap" rel="stylesheet" href="">
+</head>
+<body>
+
+  <!--Logo-->
+  <h1 class="logo">SE BOOTCAMP</h1>
+
+  <!--Icons-->
+  <section>
+    <div class="icons">
+       <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+       <img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>
+       <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+       <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+     </div>
+  </section>
+ 
+<!--Navbar-->
+  <div class="navigation">
+    <button class="hamburger" onclick="show()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </button>
+    <nav>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!--order product-->
+<div class="modal">
+  <h2>Would you like to place an order of this product?</h2>
+  <div class="user-input">
+    <input type="text" name="text" placeholder="Your Answer" required="">
+    <select id="userAnswer">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="idk">IDK</option>
+      <a  href="https://icons8.com/icon/4dgcZPeusxfG/sad-face">Sad Face</a> icon by <a href="https://icons8.com">Icons8</a>
+      </select>
+    <button onclick="showFeedback()">Submit</button>
+  </div>
+  <div class="feedback" id="feedbackMessage"></div>
+</div>
+
+<!-- sign-up form-->
+  <div class="main">
+    <input type="checkbox" id="chk" aria.hidden="true">
+
+      <div class="signup">
+        <form action="/">
+
+          <label for="chk" aria.hidden="true">Sign up</label>
+          <input type="text" name="txt" placeholder="User name"  required="">
+
+          <input type="email" name="email" id="" placeholder="Email" require="">
+          <input type="password" name="pass" placeholder="Password" id="" required>
+          <input type="password" name="pass" placeholder="confirm Password" id="" required>
+          <button>Sign up</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <form action="/">
+          <label for="chk" aria.hidden="true">Login</label>
+          <input type="email" name="email" id="" placeholder="Email Or User name" required="">
+          <input type="password" name="pass" id="" placeholder="Password" required="">
+          <button>Login</button>
+          <p>Don't have account <a href="a">Create account</a></p>
+        </form>
+      </div>
+
+  <script src="pro1.js"></script>
+  <script src="https:// kit.fontawesome.com/ae61999827.js" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
