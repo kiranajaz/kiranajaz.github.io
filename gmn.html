@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gmn.css">
+    <title>Number Guessing Game</title>
+    
+</head>
+
+<body>
+
+<section>
+
+    <div class="header">
+        <h1>GUESS MY NUMBER</h1>
+        <p>Guess a number between 1 and 100:</p>
+    </div>
+
+    <div class="game1-container">
+        <div class="score"><p>Current Score: <span id="score">10</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+            <p id="secretNumber" style="display: none;"></p>
+        </div>
+     
+        <div class="reset">
+            <button onclick="resetGame()">Reset</button>
+        </div>
+
+        <div class="game2-container">
+            <img class="img" src="download.png" alt="" width="30%">
+            <input type="text" id="guessInput" placeholder="Guess a number">
+
+             <div class="button">  
+                 <button onclick="checkGuess()">Check</button>
+                 <p id="message"></p>
+                
+            </div>  
+        </div>  
+    </div>   
+
+</section>
+
+    <script src="gmn.js"></script>
+
+</body>
+</html>
