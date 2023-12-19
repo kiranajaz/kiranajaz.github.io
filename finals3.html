@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout with Modal</title>
+  <link rel="stylesheet" href="finals3.css">
+</head>
+<body>
+  <div class="container">
+    <div class="block" id="block1">
+      <h2>Title 1</h2>
+      <img src="download.jpeg" alt="Image 1">
+      <p>Description 1</p>
+      <button class="open-modal-btn" data-modal="modal1">Open Modal</button>
+    </div>
+
+    <div class="block" id="block2">
+      <h2>Title 2</h2>
+      <img src="download.jpeg" alt="Image 2">
+      <p>Description 2</p>
+      <button class="open-modal-btn" data-modal="modal2">Open Modal</button>
+    </div>
+
+    <div class="block" id="block3">
+      <h2>Title 3</h2>
+      <img src="download.jpeg" alt="Image 3">
+      <p>Description 3</p>
+      <button class="open-modal-btn" data-modal="modal3">Open Modal</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close-modal-btn" data-modal="modal1">&times;</span>
+      <h2>Modal Title 1</h2>
+      <p>Modal Description 1</p>
+      <button class="close-modal-btn" data-modal="modal1">Close Modal</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close-modal-btn" data-modal="modal2">&times;</span>
+      <h2>Modal Title 2</h2>
+      <p>Modal Description 2</p>
+      <button class="close-modal-btn" data-modal="modal2">Close Modal</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close-modal-btn" data-modal="modal3">&times;</span>
+      <h2>Modal Title 3</h2>
+      <p>Modal Description 3</p>
+      <button class="close-modal-btn" data-modal="modal3">Close Modal</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+
+
+  <div id="shoppingCart">
+    <h2>Oranges</h2>
+    <ul id="cartItems">
+    </ul>
+    <p>Price: <span id="total">$3.00</span></p>
+    <input type="item">
+</div>
+
+<div id="products">
+    <h2>Products</h2>
+    <button onclick="addToCart('Product 1', 10)">Add  to cart</button>
+    
+</div>
+
+<script>
+    function addToCart(product, price) {
+        const cartItems = document.getElementById('cartItems');
+        const cartItem = document.createElement('li');
+        cartItem.textContent = product + ' - $' + price;
+        cartItems.appendChild(cartItem);
+
+        const total = document.getElementById('total');
+        total.textContent = parseFloat(total.textContent) + price;
+    }
+    
+  <script src="finals3.js"></script>
+</body>
+</html>
